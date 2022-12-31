@@ -65,6 +65,10 @@ shadowJar {
 
 build.dependsOn(shadowJar)
 
+artifacts {
+  archives shadowJar
+}
+
 publishing {
   publications {
     mavenJava(MavenPublication) {
